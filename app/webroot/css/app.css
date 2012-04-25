@@ -1,0 +1,10 @@
+.tweet_row{
+	display: block;
+	clear: left;
+}
+.tweet_image{
+	float: left;
+}
+.tweet_content{
+	padding-left: 60px;
+}

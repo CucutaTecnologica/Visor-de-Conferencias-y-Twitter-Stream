@@ -1,9 +1,8 @@
-/app/Config
 /app/tmp
-/lib/Cake/Console/Templates/skel/tmp/
-/plugins
-/vendors
-/build
-/dist
 .DS_Store
 tags
+.settings
+.project
+.travis.yml
+.buildpath
+

@@ -8,3 +8,10 @@
 .tweet_content{
 	padding-left: 60px;
 }
+
+div#countdown{
+	text-align: center;
+	display: block;
+	width: 200px;
+	height: 20px;
+}

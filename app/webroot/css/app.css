@@ -9,9 +9,9 @@
 	padding-left: 60px;
 }
 
-div#countdown{
+div#countdown_p{
 	text-align: center;
 	display: block;
 	width: 200px;
-	height: 20px;
+	height: 60px;
 }

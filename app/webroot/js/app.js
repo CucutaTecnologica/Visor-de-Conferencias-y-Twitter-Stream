@@ -3,14 +3,23 @@ function get_post(){
 	 * El hashtag se debe leer de la table evento, por ahora
 	 * esta estatico.
 	 */
+	
+	/*
+	url = "http://search.twitter.com/search.json?q=flisolcucuta2012&rpp=10&include_entities=true&result_type=mixed";
+	
+	$.getJSON(url, function(data){
+		//buildTimeLine(data);
+	});
+	*/
 	$.ajax({
-		url: 'twitter/post/flisolcucuta2012',
+		url: '/twitter/post/flisolcucuta2012',
 		type: 'GET',
 		dataType: 'json',
 		success: function(data){
 			buildTimeLine(data);
 		}
-	});	
+	});
+	
 }
 
 function buildTimeLine(data){
@@ -26,5 +35,7 @@ function buildTimeLine(data){
 			"</div></div>";
 		nt++;
 	}
+	$("#twitter_time").fadeOut("slow");
 	$('#twitter_time').html(html);
+	$("#twitter_time").fadeIn("slow");
 }

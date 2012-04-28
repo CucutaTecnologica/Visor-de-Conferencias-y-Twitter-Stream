@@ -17,11 +17,16 @@
 
 			//Aqui es donde se debe asignar la fecha del evento y sumarle la duracion de la conferencia
 			
-			
-					var newYear = new Date(); 
-					newYear = new Date(2012, 4, 27); 
+					var limit = new Date(
+						<?php echo $data["year"]; ?>,
+						<?php echo $data["month"]-1; ?>,
+						<?php echo $data["day"]; ?>,
+						<?php echo $data["hour"]; ?>,
+						<?php echo $data["min"]; ?>,
+						<?php echo $data["sec"]; ?>
+					); 
 					//$('#countdown').countdown($.countdown.regional['es']);
-					$('#countdown').countdown({until: newYear, compact: true,
+					$('#countdown').countdown({until: limit, compact: true,
     					format: 'HMS', description: ''});
 					
 				</script>
@@ -64,7 +69,7 @@
 				<script type="text/javascript" charset="UTF-8">
 						$(document).ready(function(){
 							get_post();
-							setInterval(get_post, 10000);
+							setInterval(get_post, 5000);
 						});
 					</script>
 			</div>

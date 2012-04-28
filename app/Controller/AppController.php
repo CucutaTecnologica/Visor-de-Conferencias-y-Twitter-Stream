@@ -32,10 +32,12 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
-	public $components=array('Auth', 'Session');
+	//public $components=array('Auth', 'Session');
+	
 	public function beforeFilter(){
-		// check admin and logged
-		$user = $this->Auth->user ();
+		//check admin and logged
+		//$user = $this->Auth->user ();
+		//$user;
 		if ( !empty ( $user )) {
 			$this->isAdmin = true;
 			$this->isLogged = true;

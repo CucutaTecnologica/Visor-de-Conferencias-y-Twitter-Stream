@@ -30,6 +30,25 @@ class VisorsController extends AppController {
 				$this->set("actual",$conferencia[0]);
 				$this->set("proxima",$next[0]['Conference']['name']);
 				
+		// Contador
+		$start = $conferencia[0]['Conference']['start_time'];
+		$duration = $conferencia[0]['Conference']['duration'];
+		$duration *= 60;
+		$tmp = explode(" ", $start);
+		$time = explode(":", $tmp[1]);
+		$date = explode("-", $tmp[0]);
+		$start_unix = mktime($time[0], $time[1], $time[2], $date[1], $date[2], $date[0]);
+		$start_unix += $duration;
+		
+		$r = array();
+		$r["year"] = date("Y", $start_unix);
+		$r["month"] = date("m", $start_unix);
+		$r["day"] = date("d", $start_unix);
+		$r["min"] = date("i", $start_unix);
+		$r["sec"] = date("s", $start_unix);
+		$r["hour"] = date("H", $start_unix);
+		$this->set("data", $r);
+				
 			
 		
 				

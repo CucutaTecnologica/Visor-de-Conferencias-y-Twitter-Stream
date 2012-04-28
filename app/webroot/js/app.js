@@ -4,7 +4,7 @@ function get_post(){
 	 * esta estatico.
 	 */
 	$.ajax({
-		url: '/twitter/post/flisolcucuta2012',
+		url: 'twitter/post/flisolcucuta2012',
 		type: 'GET',
 		dataType: 'json',
 		success: function(data){
@@ -17,7 +17,7 @@ function buildTimeLine(data){
 	var html = ''
 	var nt = 0;
 	var t_info = data.results;
-	while(nt < 10){
+	while(nt < 4){
 		html += "<div class='tweet_row'>" +
 			"<div class='tweet_image'><img src='"+ 
 			t_info[nt]['profile_image_url'] +"'/></div>" +

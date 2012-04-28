@@ -1,17 +1,12 @@
 .tweet_row{
 	display: block;
 	clear: left;
+	margin-bottom: 15px;
 }
 .tweet_image{
 	float: left;
 }
 .tweet_content{
+	font-size:14px;
 	padding-left: 60px;
-}
-
-div#countdown{
-	text-align: center;
-	display: block;
-	width: 200px;
-	height: 20px;
 }

@@ -1,0 +1,255 @@
+@charset "utf-8";
+/**
+ *
+ * CSS para visor principal de la conferencia activa
+ */
+
+
+
+
+
+body {
+	color: #000;
+	font-family:Verdana,helvetica,arial,sans-serif;
+	font-size:90%;
+	margin: 0 auto;
+	width: 98%;
+}
+
+
+a {
+	color: #003d4c;
+	text-decoration: underline;
+	font-weight: bold;
+}
+a:hover {
+	color: #367889;
+	text-decoration:none;
+}
+a img {
+	border:none;
+}
+h1, h2, h3, h4 {
+	font-weight: normal;
+	margin-bottom:0.5em;
+}
+h1 {
+	background:#fff;
+	color: #003d4c;
+	font-size: 100%;
+}
+h2 {
+	background:#fff;
+	color: #e32;
+	font-size: 190%;
+}
+h3 {
+	color: #2c6877;
+	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
+	font-size: 165%;
+}
+h4 {
+	color: #993;
+	font-weight: normal;
+}
+
+
+div#cabecera{
+	background: none repeat scroll 0 0 #0372AB;
+	border-radius: 5px;
+	display: inline-block;
+	margin-bottom: 32px;
+	margin-top: 9px;
+	width: 100%;
+	height: 100px;
+
+	
+}
+
+div#titulo{	
+	display: inline-block;
+	padding: 5px 6px;
+	width: 84%;
+	vertical-align: top;
+	
+	
+}
+
+div#titulo h2{
+	background:none;
+	margin-top: 15px;
+	color: white;
+}
+div#titulo span{
+	font-weight: bold;
+	color: #f5deb2;
+	margin-right: 15px;
+	text-shadow: 0 0 49px #F5DEB2;
+}
+div#contador{
+    background:#FFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 19px 19px 19px 19px;
+    display: inline-block;
+    margin-top: 4px;
+    padding: 5px 6px;
+    vertical-align: top;
+    width: 12%;
+    height: 80%;
+
+}
+
+div#contenido{
+	width: 100%;
+	height: 500px;
+	margin-bottom: 25px;
+}
+
+
+
+div#autor{
+	background: url("../img/fondotwitter935.png")no-repeat;
+	display: inline-block;
+	width: 70%;
+	height: 90%;
+	margin: 0;
+	vertical-align: top;
+	position: relative;
+	padding-top: 52px;
+	width: 930px;
+	
+}
+
+div#autor ul{
+	list-style: none;
+	font-weight: bold;
+	color: gray;
+	font-size: 37px;
+}
+div#autor ul p{
+}
+
+
+div#autor ul span{
+    color: CadetBlue;
+    font-weight: normal;
+    margin-left: 40px;
+}
+
+div#twitter{
+	background: url("../img/fondotwitter370.png")no-repeat;
+	display: inline-block;
+	width: 28%;
+	height: 100%;
+	margin: 0;
+	vertical-align: top;
+	margin-left: 12px;
+	position: relative;
+	
+	
+}
+.cuadro{
+	position: absolute;
+	background: #0071AD;
+	border-radius: 8px;
+	height: 50px;
+	width: 100px;
+	top: -20px;
+	left: -6px;
+
+	
+}
+
+.cuadro p{
+  	color: #FFF;
+    font-weight: bold;
+    padding: 2px 4px 2px 20px;
+    text-shadow: 0 0 26px #FFF;
+    
+	
+}
+div#tweets{
+	color: steelBlue;
+	font-family: Georgia;
+	font-size: 18px;
+	padding: 37px 15px 15px 30px;
+}
+
+
+.cautor{
+	width: 207px;
+}
+.cautor p{
+  	color: #FFF;
+  	text-shadow: 0 0 26px #FFF;
+	padding-left: 4px;
+
+}
+
+div#siguiente{
+   background: none repeat scroll 0 0 LightBlue;
+    border: 1px solid #CCCCCC;
+    font-size: 22px;
+    font-weight: bold;
+    height: 80px;
+}
+
+
+div#siguiente p{
+	color: CadetBlue;
+    font-size: 36px;
+    margin-top: 14px;
+    padding-left: 15px;
+	text-shadow: 1px 1px white, -1px -1px #444444;
+}
+
+
+div#siguiente span{
+		text-shadow: none;
+		color: #0372AB;
+	
+}
+div#titulo .restante{
+	position: absolute;
+	top: 16px;
+	right: 33px;
+	color: gray;
+}
+
+/* Contador */
+
+div#countdown{
+	margin-top: 27px !important;
+	color: #8C1F1F;
+	font-weight: bold;
+	font-family: Georgia;
+	background: none;
+	border: none;
+}
+div#tweets img{
+}
+
+.tweet_image{
+	
+}
+.tweet_content{
+	
+}
+
+
+/* SQL log */
+.cake-sql-log {
+	background: #fff;
+}
+.cake-sql-log td {
+	padding: 4px 8px;
+	text-align: left;
+	font-family: Monaco, Consolas, "Courier New", monospaced;
+}
+.cake-sql-log caption {
+	color:#fff;
+}
+
+.clear{
+	clear: both;
+}

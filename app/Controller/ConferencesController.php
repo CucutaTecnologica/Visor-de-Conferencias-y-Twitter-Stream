@@ -99,4 +99,13 @@ class ConferencesController extends AppController {
 		$this->Session->setFlash(__('Conference was not deleted'));
 		$this->redirect(array('action' => 'index'));
 	}
+	
+	public function activate($id){
+		$sql="UPDATE conferences SET status=0";
+		$this->Conference->query($sql);
+		$this->Conference->id=$id;
+		$this->Conference->saveField("status", 1);
+		$this->Session->setFlash("La conferencia fue activada");
+		$this->redirect($this->referer());
+	}
 }

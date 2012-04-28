@@ -25,8 +25,8 @@ class VisorsController extends AppController {
 		  * */
 				$conferencia=$this->Event->Conference->findAllByStatus('1');
 				$number= $conferencia[0]['Conference']['number']+1;				
-				$this->set("time", $event[0]['Event']['date']);								
-				$next=$this->Event->Conference->findAllByNumber($number);
+				$this->set("time", $conferencia[0]['Event']['date']);
+				$next=$this->Event->Conference->find("all", array("conditions"=>array("Conference.id >"=>$conferencia[0]["Conference"]['id']), 'order'=>'Conference.id ASC'));
 				$this->set("actual",$conferencia[0]);
 				$this->set("proxima",$next[0]['Conference']['name']);
 				

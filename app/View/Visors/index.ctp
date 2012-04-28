@@ -3,7 +3,7 @@
 		<div id="titulo">
 			<h2>
 				<span>Conferencia:</span>
-				<?php echo $name; ?>
+				<?php echo $actual['Conference']['name']; ?>
 			</h2>
 			<span class="restante">Tiempo Restante</span>
 		</div>

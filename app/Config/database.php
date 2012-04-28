@@ -6,3 +6,4 @@ class DATABASE_CONFIG {
 		'database' => DB_FILE
 	);
 }
+
